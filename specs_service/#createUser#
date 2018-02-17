@@ -1,0 +1,10 @@
+Nom du web service	CreationUtilisateur
+URL du web service	http://localhost:8080/projet/servlet/creationUtilisateur
+Description du service	Crée un nouvel utilisateur
+Paramètres en entrée	login, mot de passe, e-mail,...
+Format de sortie	
+Exemple de sortie
+Erreurs possibles
+Avancement du Service
+Classes JAVA en rapport avec le Web service
+Informations additionnelles

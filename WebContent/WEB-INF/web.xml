@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<servlet>
+		<servlet-name>HelloWorld</servlet-name>
+		<servlet-class>servlets.HelloWorld</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Addition</servlet-name>
+		<servlet-class>servlets.Addition</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Operation</servlet-name>
+		<servlet-class>servlets.Operation</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Creation</servlet-name>
+		<servlet-class>servlets.User</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HelloWorld</servlet-name>
+		<url-pattern>/servlet/bonjour</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Addition</servlet-name>
+		<url-pattern>/servlet/add</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Operation</servlet-name>
+		<url-pattern>/servlet/op</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Creation</servlet-name>
+		<url-pattern>/servlet/creer</url-pattern>
+	</servlet-mapping>
+	<resource-ref>
+		<description>DBConnection</description>
+		<res-ref-name>jdbc/db</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+</web-app>
